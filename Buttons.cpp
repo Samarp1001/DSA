@@ -11,19 +11,13 @@ int main()
         cin>>x>>y>>z;
         
 
-        if(x > y+z)
+        if(x == y && z%2 !=0)
             cout<<"First"<<endl;
-
-        
-        else if( y >= x+z)
+        else if(x > y)
+            cout<<"First"<<endl;
+        else
             cout<<"Second"<<endl;
-
-        else{
-            if((z -abs(x-y)) %2 != 0)
-                cout<<"First"<<endl;
-            else    
-                cout<<"Second"<<endl;
-        }
+        
         
 
 

@@ -1,13 +1,13 @@
 #include "bits/stdc++.h"
 using namespace std;
-
+ 
 #define ll long long int
 #define pb push_back
 #define ppb pop_back
 #define vi vector<int>
 #define vvi vector<vector<int>>
 #define vpi vector<pair<int, int>>
-
+ 
 int main()
 {
     ll t;
@@ -22,7 +22,7 @@ int main()
         cin>>s2;
         int flag = 1;
         int count =0;
-
+ 
         if(s1 == s2)
         {
             cout<<0<<endl;
@@ -48,16 +48,16 @@ int main()
                 break;
             s1+=s1;
             count ++;
-
+ 
             if(count > 5)
                 break;
-
+ 
         }
         if(flag == 0)
             cout << count<<endl;
         else    
             cout<<-1<<endl;
-
+ 
     }
     return 0;
 }
