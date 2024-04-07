@@ -36,14 +36,6 @@ int main()
         {
             cout<<"0"<<endl;
         }
-        else if (m[-1] == n )
-        {
-            if(n%2 == 0 && n!=2)
-                cout<<int(n/2)<<endl;
-            else
-                cout<<n<<endl;
-                
-        }
         
         else{
             while (flag)

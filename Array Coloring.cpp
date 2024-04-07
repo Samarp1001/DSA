@@ -15,20 +15,23 @@ int main()
     while (t--) {
         ll n;
         cin >> n;
-        char s,a;
-        cin>>s;
-        if(s >= 97)
+        vi v(n);
+        ll cnt =0 ;
+        for (int i = 0; i < n; i++)
         {
-         a = int(s) - 32;
+            cin>>v[i];
+            if(v[i] %2  == 1)
+            {
+                cnt++;
+            }
+        }
+        if(cnt%2 == 1)
+            cout<<"NO"<<endl;
+        else   
+            cout<<"YES"<<endl;
+            
 
-        }
-        else if(s < 97)
-        {
-            a = int(s) +32;
-        }
         
-        cout<<a<<endl;
-
     }
     return 0;
 }
